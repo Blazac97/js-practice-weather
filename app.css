@@ -1,0 +1,182 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "Montserrat", sans-serif;
+  background-color: #161616;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.constInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 32px;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  margin-top: 50px;
+}
+
+.wordConst {
+  color: #569cd6;
+}
+
+.wordMyWeather {
+  color: #4fc1ff;
+}
+
+.rovno {
+  color: white;
+}
+
+.wordGetWeather {
+  color: #dcdcaa;
+}
+
+.city-search-name {
+  color: #ce9178;
+}
+
+.littleInfo {
+  display: flex;
+  justify-content: center;
+  color: #b5b5b5;
+  font-size: 24px;
+  font-weight: normal;
+}
+.searchpad {
+  display: flex;
+  justify-content: center;
+  margin-top: 70px;
+}
+
+.searchInput {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  background-color: #1c1c1c;
+  border-style: none;
+  height: 40px;
+  width: 500px;
+  font-size: 18px;
+  border-radius: 4px;
+  color: blanchedalmond;
+  font-weight: bold;
+}
+
+.forIcon {
+  display: flex;
+  align-self: center;
+  margin-top: 30px;
+}
+
+.forTemp {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  font-size: 32px;
+  color: white;
+  margin-top: 20px;
+}
+
+.forCity {
+  display: flex;
+  font-family: "Montserrat", sans-serif;
+  align-self: center;
+  font-size: 32px;
+  font-weight: bold;
+  color: #dcdcaa;
+  margin-top: 20px;
+}
+.forWeatherStatus {
+  display: flex;
+  font-family: "Montserrat", sans-serif;
+  align-self: center;
+  font-size: 24px;
+  color: #b5b5b5;
+  margin-top: 5px;
+}
+.forAdditionalIfo {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  font-family: "Montserrat", sans-serif;
+  margin-top: 50px;
+}
+.firstString {
+  display: flex;
+  color: white;
+  font-size: 18px;
+  background-color: #0f0f0f;
+  padding: 10px;
+}
+.sign {
+  margin-left: 100px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.moreInfo {
+  display: none;
+}
+
+.icons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  padding: 10px;
+  padding-right: 20px;
+  margin-top: 10px;
+  background-color: #0f0f0f;
+}
+
+.value {
+  display: flex;
+  flex-direction: column;
+  border-left: solid;
+  border-color: #dcdcaa;
+  padding: 10px;
+  border-width: 1px;
+  padding-left: 20px;
+  margin-top: 10px;
+  background-color: #0f0f0f;
+}
+
+.timeInfo {
+  display: flex;
+  align-self: center;
+  font-size: 18px;
+  color: #b5b5b5;
+}
+
+.sign {
+  cursor: pointer;
+}
+.moreInfoHiden {
+  display: flex;
+  background-color: #0f0f0f;
+  font-size: 16px;
+  color: #b5b5b5;
+  margin-top: 10px;
+  padding: 5px;
+}
+.timeInfo {
+  margin-top: 55px;
+}
+
+.icon1 {
+  margin-top: 5px;
+}
+
+.icon2 {
+  margin-top: 5px;
+}
+
+.value1 {
+  margin-top: 7px;
+}
+.value2 {
+  margin-top: 10px;
+}
