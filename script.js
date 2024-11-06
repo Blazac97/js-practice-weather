@@ -37,10 +37,10 @@ const onInputDebounced = debounce(async (e) => {
   const firstvalueDiv = document.querySelector(".firstValue");
   const newIcon = document.createElement("img");
   const newIcon1 = document.createElement("img");
-  const AddInfo1Icon = document.createElement("div");
-  const AddInfo2Icon = document.createElement("div");
-  const AddInfo1Value = document.createElement("div");
-  const AddInfo2Value = document.createElement("div");
+  // const AddInfo1Icon = document.createElement("div");
+  // const AddInfo2Icon = document.createElement("div");
+  // const AddInfo1Value = document.createElement("div");
+  // const AddInfo2Value = document.createElement("div");
   const iconDiv = document.querySelector(".forIcon");
   const country = document.querySelector(".forCity");
   const weatherStatus = document.querySelector(".forWeatherStatus");
@@ -49,10 +49,36 @@ const onInputDebounced = debounce(async (e) => {
   const elementMoreInfo = document.querySelector(".moreInfo");
   const signForEvent = document.querySelector(".sign");
   const timeLine = document.querySelector(".timeInfo");
+  if (!AddInfo1Icon) {
+    AddInfo1Icon = document.createElement("div");
+    AddInfo1Icon.classList.add("icon1");
+    aditionalInfoIcons.appendChild(AddInfo1Icon);
+  }
+
+  if (!AddInfo2Icon) {
+    AddInfo2Icon = document.createElement("div");
+    AddInfo2Icon.classList.add("icon2");
+    aditionalInfoIcons.appendChild(AddInfo2Icon);
+  }
+
+  if (!AddInfo1Value) {
+    AddInfo1Value = document.createElement("div");
+    AddInfo1Value.classList.add("value1");
+    aditionalInfoValues.appendChild(AddInfo1Value);
+  }
+
+  if (!AddInfo2Value) {
+    AddInfo2Value = document.createElement("div");
+    AddInfo2Value.classList.add("value2");
+    aditionalInfoValues.appendChild(AddInfo2Value);
+  }
+
   // =======================================================================================
   firstIconDiv.innerHTML = "lon,lat";
   firstvalueDiv.innerHTML = `${weatherData.coord.lon}, ${weatherData.coord.lat}`;
   //======================================================================================
+  aditionalInfoIcons.innerHTML = "";
+  aditionalInfoValues.innerHTML = "";
   aditionalInfoIcons.appendChild(AddInfo1Icon);
   AddInfo1Icon.classList.add("icon1");
   aditionalInfoValues.appendChild(AddInfo1Value);
@@ -67,6 +93,7 @@ const onInputDebounced = debounce(async (e) => {
   AddInfo2Icon.innerHTML = `<img src="https://cdn-icons-png.flaticon.com/512/2635/2635102.png" style="width:24px; height:20px;" />`;
   AddInfo2Value.innerHTML = `${weatherData.main.humidity}%`;
   // =======================================================================================
+  iconDiv.innerHTML = "";
   newIcon.src = baseIconUrl + weatherData.weather[0].icon + "@2x.png";
   iconDiv.appendChild(newIcon);
   aditionalInfoIcons.appendChild(newIcon1);
